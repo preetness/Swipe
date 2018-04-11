@@ -6,6 +6,7 @@ class Ball extends Component {
     this.position = new Animated.ValueXY(0, 0);
     Animated.spring(this.position, {
       toValue: { x: 250, y: 700 },
+      speed: 5,
     }).start();
   }
   render() {
